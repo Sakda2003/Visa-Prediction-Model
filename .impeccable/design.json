@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T08:21:52.256526+00:00",
+  "title": "Design System: Global Eagle Visa workspace",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary teal",
+        "tonalRamp": [
+          "oklch(15% 0.04 180)",
+          "oklch(25% 0.04 180)",
+          "oklch(35% 0.04 180)",
+          "oklch(45% 0.04 180)",
+          "oklch(55% 0.04 180)",
+          "oklch(70% 0.04 180)",
+          "oklch(85% 0.04 180)",
+          "oklch(95% 0.01 180)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page heading",
+        "purpose": "Staff workspace page titles."
+      },
+      "table": {
+        "displayName": "Record cell",
+        "purpose": "Tabular document and financial records."
+      }
+    },
+    "shadows": [
+      {
+        "name": "workspace-flat",
+        "value": "none",
+        "purpose": "Workspace shadow utilities and their hover states are explicitly disabled."
+      }
+    ],
+    "motion": [
+      {
+        "name": "reduced-motion",
+        "value": "transition:none;animation:none;scroll-behavior:auto",
+        "purpose": "Applied throughout the workspace when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop-navigation",
+        "value": "1024px"
+      },
+      {
+        "name": "toolbar-subtitle",
+        "value": "1100px"
+      },
+      {
+        "name": "workspace-small",
+        "value": "700px"
+      },
+      {
+        "name": "requirements-scroll",
+        "value": "1050px"
+      },
+      {
+        "name": "evidence-grid",
+        "value": "900px"
+      },
+      {
+        "name": "evidence-single-column",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shared filled workspace action.",
+      "html": "<button class=\"ds-primary\">Save changes</button>",
+      "css": ".ds-primary{font-family:Manrope,'Segoe UI',sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 16px;border:0;border-radius:6px;background:#126d68;color:#fff;font-size:13px;font-weight:600;cursor:pointer}.ds-primary:hover{background:#126d68}.ds-primary:focus-visible{outline:3px solid #64a99f;outline-offset:3px}.ds-primary:disabled{cursor:not-allowed}"
+    },
+    {
+      "name": "Evidence field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labeled evidence input with visible keyboard focus.",
+      "html": "<label class=\"ds-field\">Applicant name<input placeholder=\"Enter name\"></label>",
+      "css": ".ds-field{font-family:Manrope,'Segoe UI',sans-serif;display:flex;flex-direction:column;gap:7px;color:#172f33;font-size:13px;font-weight:600}.ds-field input{font-family:Manrope,'Segoe UI',sans-serif;min-height:42px;padding:10px;border:1px solid #dbe5e3;border-radius:6px;background:#fff;color:#172f33;font-size:13px;font-weight:400}.ds-field input::placeholder{color:#52676c;opacity:1}.ds-field input:focus-visible{outline:3px solid #64a99f;outline-offset:3px}"
+    },
+    {
+      "name": "Toolbar action",
+      "kind": "button",
+      "description": "Quiet theme or language toolbar control.",
+      "html": "<button class=\"ds-toolbar-button\">Dark</button>",
+      "css": ".ds-toolbar-button{font-family:Manrope,'Segoe UI',sans-serif;min-height:36px;padding:4px 8px;border:0;border-radius:5px;background:transparent;color:#172f33;font-size:12px;cursor:pointer}.ds-toolbar-button:hover{background:#eaf3f0}.ds-toolbar-button:focus-visible{outline:3px solid #64a99f;outline-offset:3px}"
+    },
+    {
+      "name": "Sidebar links",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Functional navigation with an explicit current-page state.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#applications\" aria-current=\"page\">Applications</a><a href=\"#requirements\">Requirements</a></nav>",
+      "css": ".ds-nav{font-family:Manrope,'Segoe UI',sans-serif;padding:12px;background:#103f45}.ds-nav a{display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:6px;color:#d6e6e3;font-size:13px;font-weight:500;text-decoration:none}.ds-nav a:hover{background:#194d52;color:#fff}.ds-nav a[aria-current=page]{background:#2a5a5d;color:#fff}.ds-nav a:focus-visible{outline:3px solid #64a99f;outline-offset:3px}"
+    },
+    {
+      "name": "Evidence panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat bordered working group.",
+      "html": "<section class=\"ds-panel\"><h2>Evidence assessment</h2><p>Review supporting documents.</p></section>",
+      "css": ".ds-panel{font-family:Manrope,'Segoe UI',sans-serif;padding:24px;border:1px solid #dbe5e3;border-radius:10px;background:#fff;color:#172f33}.ds-panel h2{margin:0 0 8px;font-size:18px;font-weight:650;line-height:1.35;letter-spacing:-.025em}.ds-panel p{margin:0;color:#52676c;font-size:13px;line-height:1.65}"
+    },
+    {
+      "name": "Assessment disclosure",
+      "kind": "custom",
+      "description": "Native details keeps technical metadata inspectable.",
+      "html": "<details class=\"ds-details\"><summary>Assessment details</summary><p>Policy and assessment history</p></details>",
+      "css": ".ds-details{font-family:Manrope,'Segoe UI',sans-serif;padding:16px 0;border-block:1px solid #dbe5e3;color:#172f33}.ds-details summary{font-size:14px;font-weight:600;cursor:pointer}.ds-details summary:focus-visible{outline:3px solid #64a99f;outline-offset:3px}.ds-details p{font-size:13px;color:#52676c}"
+    }
+  ],
+  "narrative": {
+    "northStar": "",
+    "overview": "The implemented workspace uses deep teal navigation, white working panels and one Manrope family. This is a source-extracted record of the entire-interface replacement authorized by the user on 2026-11-18. The locally available ABA reader supplied the initial visual benchmark; the user has not identified a different prior project. No named creative metaphor or additional brand story has been selected.\n\nThe interface prioritizes agency work: application entry, requirement points, document review and evidence assessment. Labels and values carry the hierarchy; borders divide sections without decorative metric icons, promotional artwork or nested ornamental cards. Routes, authentication and scoring behavior remain product constraints in PRODUCT.md. This document describes styling, not an independent verification of those behaviors.",
+    "keyCharacteristics": [
+      "Deep teal navigation with clear active links.",
+      "Paper-white panels on a pale working canvas.",
+      "Bundled Manrope, compact labels and tabular figures.",
+      "Flat sections, concise text and inspectable assessment details."
+    ],
+    "rules": [],
+    "dos": [
+      "**Do** use the shared Manrope family and the implemented teal, surface and ink roles.",
+      "**Do** use borders and spacing to divide flat working sections.",
+      "**Do** keep functional controls, visible labels, file uploads and keyboard focus available.",
+      "**Do** retain local table scrolling, tabular figures and inspectable evidence details.",
+      "**Do** keep evidence points and approval probability visibly distinct."
+    ],
+    "donts": [
+      "**Don't** add emoji, promotional illustration, decorative metric icons or redundant introductory copy.",
+      "**Don't** reintroduce inconsistent interface fonts, nested ornamental cards or historical gradient heroes.",
+      "**Don't** treat old navy/blue/gold integration guidance as the current visual authority.",
+      "**Don't** describe an unspecified prior project as a user-selected benchmark.",
+      "**Don't** claim unperformed browser, responsive, accessibility or backend checks."
+    ]
+  }
+}

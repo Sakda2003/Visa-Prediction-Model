@@ -1,0 +1,21 @@
+.venv/
+.runtime/
+.env
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+backend/storage/
+storage/private/
+backend/results/
+ai_service/ocr_results/
+ai_service/passport.jpg
+ai_service/bank_statement.pdf
+.impeccable/review/
+
+# Python virtual environments
+.venv312/
+venv/
+

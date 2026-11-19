@@ -1,0 +1,27 @@
+{
+  "source_archive_sha256": "fe31cc7aab652c25c1f58de61eb14bba5241a9e807b340f9e61bc992a0ce93c4",
+  "excluded_private_or_environment_files": [
+    "ai_service/passport.jpg",
+    "ai_service/bank_statement.pdf",
+    "ai_service/ocr_results/passport_result.json",
+    "ai_service/ocr_results/passport_ocr.txt",
+    "ai_service/ocr_results/mrz_crops/passport_page_1_mrz.png",
+    "backend/results/bank_statement_8fd48691-547f-4be3-95ea-cee660e53151.json",
+    "backend/results/bank_statement_8c90c251-a491-4e22-9c5e-476875b71515.json",
+    "backend/results/bank_statement_91c8578b-97a8-4838-9358-11fab4f9fd4d.json",
+    "backend/results/bank_statement_4bec1998-2ba3-47d4-a892-90203badf769.json",
+    "backend/results/bank_statement_860e7078-5401-4aae-b025-23f179ed517e.json",
+    "backend/results/bank_statement_c816c0fc-6772-48b1-acdd-b43b272856d7.json",
+    "backend/results/bank_statement_f2a7e464-6d99-4af6-85bd-d411a8fb6d90.json",
+    "backend/results/bank_statement_b99bc717-5226-4490-a6c4-c8381ac5fc42.json",
+    "backend/results/bank_statement_a49f382e-d1fa-4fd1-9011-ae0315270447.json",
+    "backend/results/bank_statement_7ce636cb-3cb2-4e59-a668-fcc3a0d6835a.json",
+    "backend/results/bank_statement_9ea143ad-e118-49c3-8b62-90e97e218006.json",
+    "backend/results/bank_statement_1aa50b92-2ebb-4acc-afb1-6114a8d6c9e0.json",
+    "backend/results/bank_statement_1391761a-3e43-4cfc-a4fd-4783732e5415.json",
+    "backend/results/bank_statement_99ddc1c2-8318-4a51-8499-b3845e8000c8.json",
+    "backend/results/bank_statement_document-bank.json",
+    "storage/private/e648d4c9-f356-4b26-ba42-bb3e3c9fa44c.pdf"
+  ],
+  "source_files_extracted": 177
+}

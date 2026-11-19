@@ -1,0 +1,14 @@
+# CPU-only local OCR mode, including its bundled ONNX model files.
+# Use with OCR_PRIMARY_ENGINE=rapidocr. No external OCR provider or Paddle is needed.
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+pydantic>=2.9,<3
+python-multipart>=0.0.20,<1
+PyMuPDF>=1.24,<2
+Pillow>=10.4,<13
+numpy>=1.26,<3
+pytesseract>=0.3.13,<0.4
+psutil>=5.9.8,<8
+py-cpuinfo>=9,<10
+python-dotenv>=1,<2
+rapidocr-onnxruntime>=1.2.3,<2

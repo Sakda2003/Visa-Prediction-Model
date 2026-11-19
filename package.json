@@ -1,0 +1,16 @@
+{
+  "name": "visadoc-ai",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:frontend": "npm --prefix frontend install",
+    "install:backend": "npm --prefix backend install",
+    "install:ai": "python -m pip install -r ai_service/requirements.txt",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:ai": "python -m uvicorn app.main:app --app-dir ai_service --host 127.0.0.1 --port 8002 --reload",
+    "build:frontend": "npm --prefix frontend run build",
+    "lint:frontend": "npm --prefix frontend run lint"
+  }
+}
+
